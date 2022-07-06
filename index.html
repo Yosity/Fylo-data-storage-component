@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <section class="first-section">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <div class="icons-container">
+          <div class="icon">
+            <img src="images/icon-document.svg" alt="doc" />
+          </div>
+          <div class="icon">
+            <img src="images/icon-folder.svg" alt="folder" />
+          </div>
+          <div class="icon">
+            <img src="images/icon-upload.svg" alt="upload" />
+          </div>
+        </div>
+      </section>
+      <section class="second-section">
+        <p>
+          You’ve used
+          <span>8<span class="one">1</span><span class="five">5</span> GB</span>
+          of your storage
+        </p>
+        <div class="progress-bar-container">
+          <div class="progress-bar">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="from-to-GB">
+          <p><span>0</span> GB</p>
+          <p><span>1000</span> GB</p>
+        </div>
+        <div class="GB-left">
+          <div class="triangle"></div>
+          <h1><span class="one">1</span>8<span class="five">5</span></h1>
+          <span class="text">GB Left</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

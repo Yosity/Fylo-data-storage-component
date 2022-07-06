@@ -1,0 +1,218 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    padding: 0 8%;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    width: 24rem;
+    min-width: 18rem;
+}
+@media (min-width:1100px) {
+    body {
+        padding: 0;
+        text-align: left;
+        background-image: url("images/bg-desktop.png");
+        background-color: hsl(229, 57%, 11%);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+    }
+    main {
+       grid-template-columns: 1fr 2fr;
+        width: 80%;
+        height: 15rem;
+       max-width: 80rem;
+        grid-gap: 0 ;
+    }
+}
+.first-section {
+    background-color: hsl(228, 56%, 26%);
+    width: 90%;
+    height: 8rem;
+    padding: 10% 5%;
+    padding-left: 10%;
+    border-radius: 0.5rem;
+    border-top-right-radius:5rem ;
+}
+.logo {
+    display: block;
+    height: 2.5rem;
+    width: 130px;
+    min-width: 100px;
+}
+.icons-container {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
+    margin-top: 2rem;
+  
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    width: 40px;
+    height: 40px;
+    padding: 2%;
+    border-radius: 4px;
+}
+.icon img {
+    vertical-align: middle;
+    width: 25px;
+}
+@media (min-width:1100px)  {
+
+    .first-section { 
+        align-self: flex-end;
+        justify-self: left;
+        width: 80%;
+        min-width:16rem ;
+        max-width: 20rem;
+        padding: 20% 0;
+        padding-left: 8%;
+    }
+    .second-section {
+
+        padding: 0;
+
+        width: 80%;
+        justify-self: left;
+        align-self: flex-end;
+    }
+
+
+}
+.second-section {
+    text-align: center;
+    position: relative;
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    padding: 4%;
+    height: 8rem;
+    
+    border-radius: 0.5rem;
+}
+.second-section p{
+    color: hsl(229, 7%, 55%);
+    font-size: 16px;
+}
+
+.second-section p span,
+.from-to-GB p{
+    color: hsl(243, 100%, 93%);
+}
+
+.progress-bar-container {
+    
+    background-color: hsl(229, 57%, 11%);
+    width: 90%;
+    height: 1.3rem;
+    margin: auto;
+    padding: 1.5%;
+    border-radius: 1rem;
+}
+.progress-bar{
+    position: relative;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    width: 70%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.circle {
+    position: absolute;
+    right: 2%;
+    bottom: 15%;
+    background-color: white;
+    width: 1rem;
+    height: 70%;
+    border-radius: 10px;
+}
+@media (min-width:1000px) {
+
+    .progress-bar-container {
+        padding: 1%;
+    }
+
+}
+
+.from-to-GB {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: -10px;
+}
+.from-to-GB span {
+    font-size: 14px;
+}
+.GB-left {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 4.5rem;
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+}
+@media (min-width:1100px) {
+    .GB-left {
+        top: -25%;
+        left: 85%;
+    }
+    .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 30px solid white;
+        position: absolute;
+        
+        right: -3%;
+        bottom: -27%;
+        transform: rotateZ(164deg);
+    }
+}
+.GB-left h1{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.GB-left h1,
+.GB-left .five,
+.GB-left .one 
+{
+    font-size: 40px;
+    color: black;
+}
+.GB-left .one {
+    font-size: 35px;
+}
+.GB-left .text{
+    font-size: 15px;
+    color: hsl(229, 7%, 55%);
+    font-weight: bold;
+}
+
